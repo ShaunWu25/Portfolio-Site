@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DIGITAL MATERIALIZATION</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/final.css">
+  </head>
+  <body>
+
+    <header class="header">
+      <div class="header__inner">
+        <img class="header__logo" src="images/robots.png" alt="iconic view of a cityscape">
+        <h1 class="header__title">
+          DIGITALITY
+        </h1>
+        <a id="menu" class="header__menu">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
+            <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+          </svg>
+        </a>
+      </div>
+    </header>
+
+    <nav id="drawer" class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#">ABOUT</a></li>
+        <li class="nav__item"><a href="#">PROJECT</a></li>
+        <li class="nav__item"><a href="#">PUBLICATION</a></li>
+        <li class="nav__item"><a href="#">CONTACT</a></li>
+        <li class="nav__item"><a href="#">MAP</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="content">
+        <section class="hero">
+          <article class="description">
+            <h2>Brick Labyrinth</h2>
+            <p>Multi-robotic gantry system in the Robotic Fabrication Laboratory to build a full-scale
+               architectural installation of a brick labyrinth.</p>
+          </article>
+        </section>
+
+        <section class="hero_02">
+          <article class="description_02">
+            <h2>Digital Metal Pavilion</h2>
+            <p>It was set as an experimental project to explore the potential of
+               3d printing for producing a sand mold to be used for casting metal parts.</p>
+          </article>
+        </section>
+
+        <section class="organization">
+          <table class="organization__table">
+            <thead>
+              <tr>
+                <th>Organization</th>
+                <th class="organization__location">location</th>
+                <th>PI</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>WitteveenBos</td>
+                <td class="organization__location">Singapore</td>
+                <td>Karin</td>
+              </tr>
+              <tr>
+                <td>ETH Zurich</td>
+                <td class="organization__location">Switzerland</td>
+                <td>GKR</td>
+              </tr>
+              <tr>
+                <td>TU/Eindhoven</td>
+                <td class="organization__location">Netherland</td>
+                <td>Theo</td>
+              </tr>
+              <tr>
+                <td>NTU</td>
+                <td class="organization__location">Singarpoe</td>
+                <td>Hai</td>
+              </tr>
+              <tr>
+                <td>HDB</td>
+                <td class="organization__location">Singapore</td>
+                <td>JohnnyWong</td>
+              </tr>
+              
+            </tbody>
+          </table>
+        </section>
+
+        <section class="software">
+          <span class="software__location">Software<img class="software__today__image" src="images/programming.png" alt="icon of programming"></span>
+          <ul class="software__next">
+            <li class="software__next__item">
+              <span>Media</span>
+              <img class="software__next__image" src="images/media.png" alt="icon of a media">
+              <span>N/A</span>
+            </li><li class="software__next__item">
+              <span>Tool</span>
+              <img class="software__next__image" src="images/funnel.png" alt="icon of a tool set">
+              <span>N/A</span>
+            </li><li class="software__next__item">
+              <span>Target</span>
+              <img class="software__next__image" src="images/target.png" alt="icon of a target">
+              <span>N/A</span>
+            </li><li class="software__next__item">
+              <span>Frame</span>
+              <img class="software__next__image" src="images/cube.png" alt="icon of a cube">
+              <span>N/A</span>
+            </li><li class="software__next__item">
+              <span>Save</span>
+              <img class="software__next__image" src="images/save.png" alt="icon of a save">
+              <span>N/A</span>
+            </li>
+          </ul>
+        </section>
+
+      </section>
+      <footer>
+        <ul>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Follow us on Twitter</a></li>
+          <li><a href="#">RSS</a></li>
+        </ul>
+      </footer>
+    </main>
+    <script>
+      /*
+       * Open the drawer when the menu ison is clicked.
+       */
+      var menu = document.querySelector('#menu');
+      var main = document.querySelector('main');
+      var drawer = document.querySelector('.nav');
+
+      menu.addEventListener('click', function(e) {
+        drawer.classList.toggle('open');
+        e.stopPropagation();
+      });
+      main.addEventListener('click', function() {
+        drawer.classList.remove('open');
+      });
+
+    </script>
+  </body>
+</html>
