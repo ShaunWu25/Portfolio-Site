@@ -1,6 +1,6 @@
-#Building A Potfolio Site
+# Building A Potfolio Site
 
-##Description
+## Description
 
 Portfolio site is part of Front-End Nonodegree Program.
 
